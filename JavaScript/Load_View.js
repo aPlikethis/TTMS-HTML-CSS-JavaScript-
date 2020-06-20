@@ -27,3 +27,10 @@ password.addEventListener('blur', function() {
         this.style.color = 'grey';
     }
 });
+
+
+var load = document.querySelector("a.load");
+var Main_Load = document.querySelector("div.Main_Load_View");
+load.onclick = function() {
+    Main_Load.style.display = "none";
+}
