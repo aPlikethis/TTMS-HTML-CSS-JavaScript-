@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到TTMS系统</title>
+    <link rel="stylesheet" href="../CSS/MainView.css">
+</head>
+<body>
+    <div class="Main_View">
+        <div class="title">欢迎进入TTMS系统</div>
+
+        <div class="Main_Load_View">
+            <div class="Shadow">
+                <div class="Load_Main">
+                    <div class="operation">
+                        <div class="input">
+                        <span class="load_text">用户名</span><input type="text" class="username" value="username">
+                        <span class="load_text">密码</span><input type="text" class="password" value="password">
+                    </div>
+                    <div class="button">
+                        <a href="Javascript:;" class="load">登录</a>
+                        <a href="Javascript:;" class="init">注册</a>
+                    </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>        
+        </div>
+    </div>
+    <script>
+        
+        var user = document.querySelector('.username');
+        var password = document.querySelector(".password");
+        user.addEventListener('focus', function() {
+            if(this.value == 'username') {
+                this.value = '';
+                this.style.color = 'black';
+            }
+        });
+        password.addEventListener('focus', function() {
+            if(this.value == 'password') {
+                this.type = 'password';
+                this.value = '';
+                this.style.color = 'black';
+            }
+        });
+
+        user.addEventListener('blur', function() {
+            if(this.value == '') {
+                this.value = 'username';
+                this.style.color = 'grey';
+            }
+        });
+        password.addEventListener('blur', function() {
+            if(this.value == '') {
+                this.value = 'password';
+                this.type = 'text';
+                this.style.color = 'grey';
+            }
+        });
+    </script>
+</body>
+</html>
