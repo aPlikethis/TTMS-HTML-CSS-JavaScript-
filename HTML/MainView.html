@@ -13,15 +13,25 @@
         <div class="Main_Load_View">
             <div class="Shadow">
                 <div class="Load_Main">
-                    <div class="operation">
+                    <div class="operation" id="load">
                         <div class="input">
-                        <span class="load_text">用户名</span><input type="text" class="username" value="username">
-                        <span class="load_text">密码</span><input type="text" class="password" value="password">
+                            <span class="load_text">用户名</span><input type="text" class="username" value="username">
+                            <span class="load_text">密码</span><input type="text" class="password" value="password">
+                        </div>
+                        <div class="button">
+                            <a href="Javascript:;" class="load">登录</a>
+                            <a href="Javascript:;" class="init" id = "initviewbtn">注册</a>
+                        </div>
                     </div>
-                    <div class="button">
-                        <a href="Javascript:;" class="load">登录</a>
-                        <a href="Javascript:;" class="init">注册</a>
-                    </div>
+                    <div class="operation" id="init" style="display: none;">
+                        <div class="input">
+                            <span class="load_text">用户名</span><input type="text" class="username" value="username">
+                            <span class="load_text">密码</span><input type="text" class="password" value="password">
+                            <span class="load_text">请再次输入密码</span><input type="text" class="password" value="password"><span id = "password_warning">两次密码不一致！</span>
+                        </div>
+                        <div class="button">
+                            <a href="Javascript:;" class="init" id="initbtn">注册</a>
+                        </div>
                     </div>
                     
                     
